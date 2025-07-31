@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. Asha Mehta",
+    "specialization": "Cardiologist",
+    "profileImage": "https://randomuser.me/api/portraits/women/44.jpg",
+    "availability": "Available Today",
+    "details": "Expert in heart health and cardiovascular diseases. 10+ years experience.",
+    "slots": [
+      "2024-08-01T10:00",
+      "2024-08-01T11:00",
+      "2024-08-01T15:00",
+      "2024-08-02T09:00",
+      "2024-08-02T14:00"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Dr. Ravi Kumar",
+    "specialization": "Dermatologist",
+    "profileImage": "https://randomuser.me/api/portraits/men/32.jpg",
+    "availability": "Fully Booked",
+    "details": "Specialist in skin, hair, and nail disorders. 8+ years experience.",
+    "slots": [
+      "2024-08-03T10:00",
+      "2024-08-03T11:00",
+      "2024-08-04T09:00"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Dr. Priya Singh",
+    "specialization": "Pediatrician",
+    "profileImage": "https://randomuser.me/api/portraits/women/65.jpg",
+    "availability": "On Leave",
+    "details": "Child health expert. 12+ years experience in pediatrics.",
+    "slots": [
+      "2024-08-05T10:00",
+      "2024-08-05T11:00",
+      "2024-08-06T09:00",
+      "2024-08-06T14:00"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Dr. Michael Brown",
+    "specialization": "Orthopedic Surgeon",
+    "profileImage": "https://randomuser.me/api/portraits/men/45.jpg",
+    "availability": "Available Today",
+    "details": "Specialist in bone and joint surgery. 15+ years experience.",
+    "slots": [
+      "2024-08-01T13:00",
+      "2024-08-01T16:00",
+      "2024-08-02T10:00"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Dr. Emily Clark",
+    "specialization": "Neurologist",
+    "profileImage": "https://randomuser.me/api/portraits/women/68.jpg",
+    "availability": "Available Today",
+    "details": "Expert in brain and nervous system disorders. 9+ years experience.",
+    "slots": [
+      "2024-08-03T09:00",
+      "2024-08-03T11:30",
+      "2024-08-04T15:00"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Dr. Sunil Patel",
+    "specialization": "Gastroenterologist",
+    "profileImage": "https://randomuser.me/api/portraits/men/60.jpg",
+    "availability": "Fully Booked",
+    "details": "Specialist in digestive system and liver disorders. 11+ years experience.",
+    "slots": [
+      "2024-08-05T10:00",
+      "2024-08-05T12:00",
+      "2024-08-06T14:00"
+    ]
+  }
+]
