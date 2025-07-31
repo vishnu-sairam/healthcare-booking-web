@@ -214,6 +214,75 @@ For production, consider migrating from JSON files to:
 - Verify JSON files are writable
 - Check server logs for file system errors
 
+## 🚧 Challenges Faced and Solutions
+
+### 1. **Tailwind CSS Configuration Issues**
+**Challenge**: Initial setup of Tailwind CSS v4 with Create React App caused compatibility issues and PostCSS configuration errors.
+
+**Solution**: 
+- Downgraded to Tailwind CSS v3.4.3 for better compatibility
+- Updated `postcss.config.js` to use `tailwindcss: {}` instead of `@tailwindcss/postcss`
+- Performed clean reinstall of dependencies with `Remove-Item -Recurse -Force node_modules, package-lock.json`
+
+### 2. **PowerShell Command Syntax**
+**Challenge**: PowerShell doesn't support `&&` operator for command chaining, causing multiple command execution failures.
+
+**Solution**: 
+- Split compound commands into separate terminal calls
+- Used individual commands like `cd backend` then `npm install` separately
+- Adapted to PowerShell syntax for directory creation and file operations
+
+### 3. **File Serving Path Issues**
+**Challenge**: Create React App development server couldn't serve JSON files from `src/data/` directory, causing 404 errors.
+
+**Solution**: 
+- Moved `doctors.json` from `src/data/` to `public/` directory
+- Updated fetch paths from `/src/data/doctors.json` to `/doctors.json`
+- Leveraged Create React App's static file serving from `public/` folder
+
+### 4. **Express.js Version Compatibility**
+**Challenge**: Latest Express.js v5.x had compatibility issues with path-to-regexp dependency, causing server startup failures.
+
+**Solution**: 
+- Downgraded to Express.js v4.18.2 for stability
+- Updated all backend dependencies to compatible versions
+- Removed problematic static file serving that was causing path-to-regexp errors
+
+### 5. **Dark Mode Visibility Issues**
+**Challenge**: Text elements were not clearly visible in dark mode, especially doctor names and specializations.
+
+**Solution**: 
+- Added explicit dark mode classes: `dark:text-white`, `dark:text-gray-200`, `dark:text-gray-300`
+- Updated form inputs with proper dark mode styling
+- Enhanced contrast for better readability in both light and dark themes
+
+### 6. **API Integration Complexity**
+**Challenge**: Transitioning from static JSON files to real backend API required significant frontend refactoring.
+
+**Solution**: 
+- Implemented proper error handling with loading states
+- Added try-catch blocks for all API calls
+- Created user-friendly error messages and retry mechanisms
+- Updated all components to handle async data fetching
+
+### 7. **Data Persistence Strategy**
+**Challenge**: Choosing between localStorage (frontend-only) vs backend storage for appointments.
+
+**Solution**: 
+- Implemented both approaches for flexibility
+- Created backend API endpoints for persistent storage
+- Maintained localStorage as fallback for frontend-only mode
+- Added proper data validation and error handling
+
+### 8. **Component Architecture Decisions**
+**Challenge**: Balancing between monolithic components vs over-engineering with too many small components.
+
+**Solution**: 
+- Created reusable components for common UI elements (DoctorCard, SearchBar)
+- Kept page-level components for specific functionality
+- Maintained clear separation of concerns
+- Used props for data flow and state management
+
 ## 🤝 Contributing
 
 1. Fork the repository
@@ -243,10 +312,6 @@ For production, consider migrating from JSON files to:
 - [ ] Implement rate limiting and security measures
 - [ ] Add logging and monitoring
 - [ ] Optimize for performance and SEO
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 👨‍💻 Author
 
