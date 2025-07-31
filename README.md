@@ -2,6 +2,18 @@
 
 A modern, full-stack healthcare appointment booking system built with React.js and Node.js/Express. Features a responsive design with dark mode support and real-time appointment management.
 
+## 🌐 Live Application
+
+**🎯 Frontend:** [https://healthcare-booking-web.vercel.app](https://healthcare-booking-web.vercel.app)  
+**🔧 Backend API:** [https://healthcare-booking-web.onrender.com](https://healthcare-booking-web.onrender.com)
+
+### **Try the Live App:**
+- ✅ **Browse doctors** and their specializations
+- ✅ **Search and filter** by availability
+- ✅ **Book appointments** with real-time validation
+- ✅ **Manage appointments** with full CRUD operations
+- ✅ **Dark mode** toggle for better UX
+
 ## ✨ Features
 
 ### 🎯 Core Functionality
@@ -85,8 +97,8 @@ healtcare_booking_web/
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
-   cd healtcare_booking_web
+   git clone https://github.com/vishnu-sairam/healthcare-booking-web.git
+   cd healthcare-booking-web
    ```
 
 2. **Install frontend dependencies**
@@ -180,7 +192,7 @@ Edit `backend/data/doctors.json`:
 
 ## 🚀 Deployment
 
-### Frontend Deployment (Vercel/Netlify)
+### Frontend Deployment (Vercel)
 1. Build the application: `npm run build`
 2. Deploy the `build` folder to your preferred platform
 
@@ -316,8 +328,8 @@ For production, consider migrating from JSON files to:
 ## 👨‍💻 Author
 
 **Vishnu Sai Ram**
-- GitHub: [@your-github-username]
-- LinkedIn: [@your-linkedin-profile]
+- GitHub: [https://github.com/vishnu-sairam](https://github.com/vishnu-sairam)
+- LinkedIn: [https://www.linkedin.com/in/vishnu-sairam-400189260](https://www.linkedin.com/in/vishnu-sairam-400189260)
 
 ## 🙏 Acknowledgments
 
